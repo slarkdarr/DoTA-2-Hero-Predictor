@@ -4,7 +4,7 @@ import logging
 import numpy
 import pickle
 
-logging.basicConfig(filename='State.log', level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s')
+# logging.basicConfig(filename='State.log', level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s')
 
 class MCTSPlayer:
 
