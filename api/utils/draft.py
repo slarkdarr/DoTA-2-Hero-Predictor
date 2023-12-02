@@ -1,12 +1,17 @@
 import numpy as np
-from player import MCTSPlayer
+from utils.player import MCTSPlayer
 # import tensorflow as tf
 import pickle
 import xgboost as xgb
+import os
+import joblib
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(script_dir)
 
 MAX_ITERS = 200
 C = 0.5
-ENV_PATH = 'models/best_model_GBDT.pkl'
+ENV_PATH = os.path.join(project_root, 'models', 'best_model_GBDT.pkl')
 
 class Draft:
     """

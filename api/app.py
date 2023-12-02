@@ -2,14 +2,11 @@ from flask import Flask, render_template, session, redirect, url_for
 from flask_wtf import FlaskForm
 from wtforms import RadioField, SelectField, SubmitField
 from wtforms.validators import DataRequired
-import sys
 
-sys.path.append('utils')
+from utils.draft import Draft
+from utils.variables import *
 
-from draft import Draft
-from variables import *
-
-app = Flask(__name__, template_folder='../templates')
+app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'mysecretkey'
 
