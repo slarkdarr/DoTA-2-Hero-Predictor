@@ -1,1 +1,1 @@
-worker: python api/app.py -p $PORT
+web: python api/app.py -p 5000
