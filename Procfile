@@ -1,1 +1,1 @@
-web: python api/app.py -p $PORT
+worker: python api/app.py -p $PORT
