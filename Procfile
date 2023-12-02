@@ -1,1 +1,1 @@
-web: python api/app.py -p 5000
+web: python api/app.py

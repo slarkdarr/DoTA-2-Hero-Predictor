@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, session, redirect, url_for
 from flask_wtf import FlaskForm
 from wtforms import RadioField, SelectField, SubmitField
@@ -80,6 +81,7 @@ def solution():
 
     return render_template('solution.html', prediction_text='{}'.format(hero), win_probability=f'{int(win_prob*100)}%')
 
+port = int(os.environ.get('PORT', 5000))
 # if this is the main thread of execution first load the model and then start the server
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=port, debug=True)
