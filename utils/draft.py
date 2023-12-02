@@ -1,5 +1,5 @@
 import numpy as np
-from utils.player import MCTSPlayer
+from player import MCTSPlayer
 # import tensorflow as tf
 import pickle
 import xgboost as xgb

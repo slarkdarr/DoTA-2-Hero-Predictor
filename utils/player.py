@@ -1,5 +1,5 @@
 import random
-from utils.node import Node
+from node import Node
 import logging
 import numpy
 import pickle
